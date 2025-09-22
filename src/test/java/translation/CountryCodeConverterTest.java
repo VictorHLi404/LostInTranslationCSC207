@@ -8,7 +8,7 @@ public class CountryCodeConverterTest {
 
     @Test
     public void fromCountryCodeUSA() {
-        CountryCodeConverter converter = new CountryCodeConverter();
+        CountryCodeConverter converter = new CountryCodeConverter( "country-codes.txt");
         assertEquals("United States of America (the)", converter.fromCountryCode("usa"));
     }
 
